@@ -26,11 +26,11 @@ User.init(
       validate: {
         len: [15],
       },
-      xp: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        defaultValue: [1],
-      },
+    },
+    xp: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: [1],
     },
   },
   {
