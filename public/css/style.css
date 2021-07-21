@@ -1,0 +1,24 @@
+.game-board {
+    display: grid;
+    grid-template-columns: 20px 120px 120px 120px 120px 120px 20px;
+    grid-template-rows: 20px 120px 120px 120px 120px 120px 20px;
+    justify-content: center;
+}
+
+.box {
+    background-color: #d9d9d9;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wall {
+    background-color: black;
+}
+
+.lava {
+    background-color: black;
+    border: 2px solid black;
+}
