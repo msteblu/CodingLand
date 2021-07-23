@@ -4,8 +4,24 @@ const sequelize = require('../config/connection');
 class Gamepiece extends Model {}
 
 Gamepiece.init(
+        {
+            id: {
+              type: DataTypes.INTEGER,
+              allowNull: false,
+              primaryKey: true,
+              autoIncrement: true,
+            },
+            name: {
+              type: DataTypes.STRING,
+              allowNull: false,
+            },
+        },
     {
-    //Things go here
+        sequelize,
+        timestamp: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'questions',
     }
 )
 module.exports = Gamepiece;
