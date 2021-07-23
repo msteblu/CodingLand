@@ -2,7 +2,7 @@ const sequelize = require('../config/connection');
 const { User, Gamepiece, Questions } = require('../models');
 
 const userData = require('./user.json');
-const gamepieceData = require('./gamepieceData.json');
+const gamepieceData = require('./gamepieces.json');
 const questionData = require('./questions.json');
 
 const seedDatabase = async () => {
