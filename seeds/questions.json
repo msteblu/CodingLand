@@ -1,0 +1,59 @@
+[
+    {
+      "question": "What is our instructor Charlie’s dog’s name?",
+      "correctAnswer": "Beau",
+      "answer2": "Bruce",
+      "answer3": "Wanda",
+      "answer4": "Hemingsworth"
+    },
+    {
+        "question": "What is our instructor Charlie’s dog’s name?",
+        "correctAnswer": "Beau",
+        "answer2": "Bruce",
+        "answer3": "Wanda",
+        "answer4": "Hemingsworth"
+      },
+      {
+        "question": "What country is Machu Picchu in?",
+        "correctAnswer": "Peru",
+        "answer2": "Chile",
+        "answer3": "Colombia",
+        "answer4": "Brazil"
+      },
+      {
+        "question": "What is one of Charlie’s cat’s names?",
+        "correctAnswer": "Bitcoin",
+        "answer2": "Git",
+        "answer3": "Handlebars",
+        "answer4": "Java"
+      },
+      {
+        "question": "What is Sir Isaac Newton known for?",
+        "correctAnswer": "Developing the law of gravity",
+        "answer2": "Discovering electricity",
+        "answer3": "Lead singer of Metallica",
+        "answer4": "Was a knight of the Round Table"
+      },
+      {
+        "question": "What is Bruce Banner’s superhero name?",
+        "correctAnswer": "Iron Man",
+        "answer2": "Iron Man",
+        "answer3": "Dr. Strange",
+        "answer4": "Vision"
+      },
+      {
+        "question": "What year did NASA first land astronauts on the moon?",
+        "correctAnswer": "1969",
+        "answer2": "1959",
+        "answer3": "1960",
+        "answer4": "1690"
+      },
+      {
+        "question": "How many species of whales are there?",
+        "correctAnswer": "Beau",
+        "answer2": "Bruce",
+        "answer3": "Wanda",
+        "answer4": "Hemingsworth"
+      },
+  ]
+  
