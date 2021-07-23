@@ -15,5 +15,13 @@ Gamepiece.init(
               type: DataTypes.STRING,
               allowNull: false,
             },
+        },
+    {
+        sequelize,
+        timestamp: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'questions',
+    }
 )
 module.exports = Gamepiece;
