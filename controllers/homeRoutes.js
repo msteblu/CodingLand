@@ -1,5 +1,21 @@
 const router = require('express').Router();
 
+router.get('/', async (req, res) => {
+  try {
+    res.render('homepage');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/characterChoice', async (req, res) => {
+  try {
+    res.render('characterChoice');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 // Render the login page
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
