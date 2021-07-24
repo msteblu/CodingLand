@@ -1,13 +1,13 @@
 const Gamepiece = require('./Gamepiece');
 const User = require('./User');
 const Questions = require('./Questions');
-User.hasOne(Gamepiece, {
-    foreignKey: 'user_id',
-    onDelete: 'CASCADE',
+
+User.belongsTo(Gamepiece, {
+    foreignKey: 'gamepiece_id'
 });
 
-Gamepiece.belongsTo(User, {
-    foreignKey: 'user_id',
+Gamepiece.hasMany(User, {
+    foreignKey: 'gamepiece_id'
 });
 
 
