@@ -21,7 +21,7 @@ Gamepiece.init(
         timestamp: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'questions',
+        modelName: 'gamepiece',
     }
 )
 module.exports = Gamepiece;
