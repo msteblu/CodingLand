@@ -8,22 +8,17 @@ const questionData = require('./questions.json');
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
-    const users = await User.bulkCreate(userData, {
+    const gamepieces = await Gamepiece.bulkCreate(gamepieceData, {
         individualHooks: true,
         returning: true,
     })
 
-    for (const questions of questionData) {
-        await Questions.create({
-            ...questions,
-            user_id: users[Math.floor(Math.random() * users.length)].id,
-        });
-    };
+    const questions = Questions.bulkCreate(questionData);
 
-    for (const gamepiece of gamepieceData) {
-        await Gamepiece.create({
-            ...gamepiece,
-            user_id: users[Math.floor(Math.random() * users.length)].id,
+    for (const user of userData) {
+        await User.create({
+            ...user,
+            gamepiece_id: gamepieces[Math.floor(Math.random() * user.length)],
         });
     };
     
