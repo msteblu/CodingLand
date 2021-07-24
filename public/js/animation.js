@@ -15,4 +15,4 @@ function moveRight() {
         rotation: 360
     });
 };
-// moveRight();
+moveRight();
