@@ -1,22 +1,22 @@
 [
     {
-        "name": "Johnny",
+        "userName": "Johnny",
         "email": "Johnny@Johnny.com",
-        "password": "password123456789"
+        "password": "password1234567"
     },
     {
-        "name": "Amira",
+        "userName": "Amira",
         "email": "Amira@Amira.com",
-        "password": "password123456789"
+        "password": "password1234567"
     },
     {
-        "name": "Megan",
+        "userName": "Megan",
         "email": "Megan@Megan.com",
-        "password": "password123456789"
+        "password": "password1234567"
     },
     {
-        "name": "Daniel",
+        "userName": "Daniel",
         "email": "Daniel@Daniel.com",
-        "password": "password123456789"
+        "password": "password1234567"
     }
 ]
