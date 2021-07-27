@@ -1,150 +1,149 @@
 [
-    {
-      "question": "What is our instructor Charlie’s dog’s name?",
-      "correctAnswer": "Beau",
-      "answer2": "Bruce",
-      "answer3": "Wanda",
-      "answer4": "Hemingsworth"
-    },
-    {
-        "question": "What is our instructor Charlie’s dog’s name?",
-        "correctAnswer": "Beau",
-        "answer2": "Bruce",
-        "answer3": "Wanda",
-        "answer4": "Hemingsworth"
-      },
-      {
-        "question": "What country is Machu Picchu in?",
-        "correctAnswer": "Peru",
-        "answer2": "Chile",
-        "answer3": "Colombia",
-        "answer4": "Brazil"
-      },
-      {
-        "question": "What is one of Charlie’s cat’s names?",
-        "correctAnswer": "Bitcoin",
-        "answer2": "Git",
-        "answer3": "Handlebars",
-        "answer4": "Java"
-      },
-      {
-        "question": "What is Sir Isaac Newton known for?",
-        "correctAnswer": "Developing the law of gravity",
-        "answer2": "Discovering electricity",
-        "answer3": "Lead singer of Metallica",
-        "answer4": "Was a knight of the Round Table"
-      },
-      {
-        "question": "What is Bruce Banner’s superhero name?",
-        "correctAnswer": "Hulk",
-        "answer2": "Iron Man",
-        "answer3": "Dr. Strange",
-        "answer4": "Vision"
-      },
-      {
-        "question": "What year did NASA first land astronauts on the moon?",
-        "correctAnswer": "1969",
-        "answer2": "1959",
-        "answer3": "1960",
-        "answer4": "1690"
-      },
-      {
-        "question": "How many species of whales are there?",
-        "correctAnswer": "90",
-        "answer2": "10",
-        "answer3": "50",
-        "answer4": "200"
-      },
-      {
-        "question": "Which movie did Quentin Tarantino NOT direct?",
-        "correctAnswer": "Die Hard",
-        "answer2": "Pulp Fiction",
-        "answer3": "Kill Bill",
-        "answer4": "Django Unchained"
-      },
-      {
-        "question": "Who was Indira Gandhi?",
-        "correctAnswer": "First female prime minister of India",
-        "answer2": "Social media influencer",
-        "answer3": "Inventor of programmable computer",
-        "answer4": "Famous architect"
-      },
-      {
-        "question": "Rickrolling refers to a song by what musician?",
-        "correctAnswer": "Rick Astley",
-        "answer2": "Ric Ocasek",
-        "answer3": "Richard Nixon",
-        "answer4": "Richie Rich"
-      },
-      {
-        "question": "What site is known for job postings?",
-        "correctAnswer": "Indeed",
-        "answer2": "Monsters Inc",
-        "answer3": "LinkedOut",
-        "answer4": "Discord"
-      },
-      {
-        "question": "Where are the Olympics being held in 2021?",
-        "correctAnswer": "Tokyo",
-        "answer2": "Los Angeles",
-        "answer3": "Switzerland",
-        "answer4": "Rio"
-      },
-      {
-        "question": "What is the largest lake in the U.S.?",
-        "correctAnswer": "Superior",
-        "answer2": "Erie",
-        "answer3": "Ontario",
-        "answer4": "Michigan"
-      },
-      {
-        "question": "What animal is the Cheetos mascot?",
-        "correctAnswer": "Cheetah",
-        "answer2": "Orangutan",
-        "answer3": "Gecko",
-        "answer4": "Tiger"
-      },
-      {
-        "question": "What year was Swedish environmental activist Greta Thunberg born?",
-        "correctAnswer": "2003",
-        "answer2": "1993",
-        "answer3": "1973",
-        "answer4": "1963"
-      },
-      {
-        "question": "Who wrote 'The Hill We Climb' and is the youngest inaugural poet in U.S. history?",
-        "correctAnswer": "Amanda Gorman",
-        "answer2": "Maya Angelou",
-        "answer3": "Macaulay Culkin",
-        "answer4": "Robert Downey Jr."
-      },
-      {
-        "question": "Pediatricians recommend a maximum of how many hours of screen time per day for children?",
-        "correctAnswer": "2 hours",
-        "answer2": "Unlimited",
-        "answer3": "16 hours if including YouTube time",
-        "answer4": "Half an hour"
-      },
-      {
-        "question": "What’s an example of a palindrome?",
-        "correctAnswer": "Kayak",
-        "answer2": "Tacos for cats",
-        "answer3": "Camel",
-        "answer4": "Beep"
-      },
-      {
-        "question": "What is myopia?",
-        "correctAnswer": "Nearsightedness",
-        "answer2": "Low-grade fever",
-        "answer3": "Sleep disorder",
-        "answer4": "Charlie's cat's name"
-      },
-      {
-        "question": "What is the default name of the main character in Minecraft?",
-        "correctAnswer": "Steve",
-        "answer2": "Joe",
-        "answer3": "Karen",
-        "answer4": "Roger"
-      }
-  ]
-  
+  {
+    "question": "What is our instructor Charlie’s dog’s name?",
+    "correct_answer": "Beau",
+    "answer2": "Bruce",
+    "answer3": "Wanda",
+    "answer4": "Hemingsworth"
+  },
+  {
+    "question": "What is our instructor Charlie’s dog’s name?",
+    "correct_answer": "Beau",
+    "answer2": "Bruce",
+    "answer3": "Wanda",
+    "answer4": "Hemingsworth"
+  },
+  {
+    "question": "What country is Machu Picchu in?",
+    "correct_answer": "Peru",
+    "answer2": "Chile",
+    "answer3": "Colombia",
+    "answer4": "Brazil"
+  },
+  {
+    "question": "What is one of Charlie’s cat’s names?",
+    "correct_answer": "Bitcoin",
+    "answer2": "Git",
+    "answer3": "Handlebars",
+    "answer4": "Java"
+  },
+  {
+    "question": "What is Sir Isaac Newton known for?",
+    "correct_answer": "Developing the law of gravity",
+    "answer2": "Discovering electricity",
+    "answer3": "Lead singer of Metallica",
+    "answer4": "Was a knight of the Round Table"
+  },
+  {
+    "question": "What is Bruce Banner’s superhero name?",
+    "correct_answer": "Hulk",
+    "answer2": "Iron Man",
+    "answer3": "Dr. Strange",
+    "answer4": "Vision"
+  },
+  {
+    "question": "What year did NASA first land astronauts on the moon?",
+    "correct_answer": "1969",
+    "answer2": "1959",
+    "answer3": "1960",
+    "answer4": "1690"
+  },
+  {
+    "question": "How many species of whales are there?",
+    "correct_answer": "90",
+    "answer2": "10",
+    "answer3": "50",
+    "answer4": "200"
+  },
+  {
+    "question": "Which movie did Quentin Tarantino NOT direct?",
+    "correct_answer": "Die Hard",
+    "answer2": "Pulp Fiction",
+    "answer3": "Kill Bill",
+    "answer4": "Django Unchained"
+  },
+  {
+    "question": "Who was Indira Gandhi?",
+    "correct_answer": "First female prime minister of India",
+    "answer2": "Social media influencer",
+    "answer3": "Inventor of programmable computer",
+    "answer4": "Famous architect"
+  },
+  {
+    "question": "Rickrolling refers to a song by what musician?",
+    "correct_answer": "Rick Astley",
+    "answer2": "Ric Ocasek",
+    "answer3": "Richard Nixon",
+    "answer4": "Richie Rich"
+  },
+  {
+    "question": "What site is known for job postings?",
+    "correct_answer": "Indeed",
+    "answer2": "Monsters Inc",
+    "answer3": "LinkedOut",
+    "answer4": "Discord"
+  },
+  {
+    "question": "Where are the Olympics being held in 2021?",
+    "correct_answer": "Tokyo",
+    "answer2": "Los Angeles",
+    "answer3": "Switzerland",
+    "answer4": "Rio"
+  },
+  {
+    "question": "What is the largest lake in the U.S.?",
+    "correct_answer": "Superior",
+    "answer2": "Erie",
+    "answer3": "Ontario",
+    "answer4": "Michigan"
+  },
+  {
+    "question": "What animal is the Cheetos mascot?",
+    "correct_answer": "Cheetah",
+    "answer2": "Orangutan",
+    "answer3": "Gecko",
+    "answer4": "Tiger"
+  },
+  {
+    "question": "What year was Swedish environmental activist Greta Thunberg born?",
+    "correct_answer": "2003",
+    "answer2": "1993",
+    "answer3": "1973",
+    "answer4": "1963"
+  },
+  {
+    "question": "Who wrote 'The Hill We Climb' and is the youngest inaugural poet in U.S. history?",
+    "correct_answer": "Amanda Gorman",
+    "answer2": "Maya Angelou",
+    "answer3": "Macaulay Culkin",
+    "answer4": "Robert Downey Jr."
+  },
+  {
+    "question": "Pediatricians recommend a maximum of how many hours of screen time per day for children?",
+    "correct_answer": "2 hours",
+    "answer2": "Unlimited",
+    "answer3": "16 hours if including YouTube time",
+    "answer4": "Half an hour"
+  },
+  {
+    "question": "What’s an example of a palindrome?",
+    "correct_answer": "Kayak",
+    "answer2": "Tacos for cats",
+    "answer3": "Camel",
+    "answer4": "Beep"
+  },
+  {
+    "question": "What is myopia?",
+    "correct_answer": "Nearsightedness",
+    "answer2": "Low-grade fever",
+    "answer3": "Sleep disorder",
+    "answer4": "Charlie's cat's name"
+  },
+  {
+    "question": "What is the default name of the main character in Minecraft?",
+    "correct_answer": "Steve",
+    "answer2": "Joe",
+    "answer3": "Karen",
+    "answer4": "Roger"
+  }
+]
