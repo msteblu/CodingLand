@@ -77,12 +77,7 @@ h1 {
     flex-flow: flex;
 }
 
-
-body { 
-    /* background: url(../img/download.jpg) no-repeat center center fixed;  */
 body {
-    background: url(../img/download.jpg) no-repeat center center fixed;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
