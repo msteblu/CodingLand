@@ -1,4 +1,3 @@
-//animations here
 //moves right one square, background becomes white, spins 360
 function moveRight() {
     gsap.to(".logo", {
@@ -6,11 +5,12 @@ function moveRight() {
         duration: 2,
         x: 80,
         backgroundColor: "white",
-        borderRadius: "20%",
+        borderRadius: "50%",
         border: "10px solid white",
         ease: "back"
     });
     gsap.to(".logo", {
+        delay: 3,
         duration: 1,
         rotation: 360
     });
