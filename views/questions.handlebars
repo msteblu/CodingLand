@@ -1,6 +1,7 @@
+{{!-- added class to make questions bigger and add space between questions --}}
 <div>
   {{#each questions as |question|}}
-<div>{{question.question}}</div>
+<div class="h5 pt-3">{{question.question}}</div>
 <input type="radio" id="1" value="1">
 <label for="1">{{question.correct_answer}}</label><br>
 <input type="radio" id="2" value="2">
