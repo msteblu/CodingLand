@@ -1,41 +1,50 @@
-const router = require('express').Router();
-const withAuth = require('../utils/auth');
-const { Questions, User, Gamepiece } = require('../models');
+const router = require("express").Router();
+const withAuth = require("../utils/auth");
+const { Questions, User, Gamepiece } = require("../models");
 
-router.get('/', async (req, res) => {
+// Render the Home-Login Page
+router.get("/", async (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/characterChoice");
+    return;
+  } else {
+    try {
+      res.render("homepage", {
+        loggedIn: req.session.loggedIn,
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  }
+});
+
+// Render the Character Choices
+router.get("/characterChoice", withAuth, async (req, res) => {
   try {
-    res.render('homepage');
+    res.render("characterChoice", {
+      loggedIn: req.session.loggedIn,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.get('/login', async (req, res) => {
-  try {
-    res.render('login');
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.get('/questions', async (req, res) => {
+// Render the Questions
+router.get("/questions", withAuth, async (req, res) => {
   try {
     const questionData = await Questions.findAll();
 
-    const questions = questionData.map((questions) => questions.get({ plain: true }))
+    const questions = questionData.map((questions) =>
+      questions.get({ plain: true })
+    );
     console.log(questions);
-    res.render('questions', {questions});
+    res.render("questions", {
+      questions,
+      loggedIn: true,
+    });
   } catch (err) {
     res.status(500).json(err);
-    console.log(err)
-  }
-});
-
-router.get('/characterChoice', async (req, res) => {
-  try {
-    res.render('characterChoice');
-  } catch (err) {
-    res.status(500).json(err);
+    console.log(err);
   }
 });
 

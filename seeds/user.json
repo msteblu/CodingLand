@@ -1,22 +1,22 @@
 [
-    {
-        "userName": "John",
-        "email": "Johnny@Johnny.com",
-        "password": "password1234567"
-    },
-    {
-        "userName": "Amira",
-        "email": "Amira@Amira.com",
-        "password": "password1234567"
-    },
-    {
-        "userName": "Megan",
-        "email": "Megan@Megan.com",
-        "password": "password1234567"
-    },
-    {
-        "userName": "Daniel",
-        "email": "Daniel@Daniel.com",
-        "password": "password1234567"
-    }
+  {
+    "username": "John",
+    "email": "Johnny@Johnny.com",
+    "password": "password1234567"
+  },
+  {
+    "username": "Amira",
+    "email": "Amira@Amira.com",
+    "password": "password1234567"
+  },
+  {
+    "username": "Megan",
+    "email": "Megan@Megan.com",
+    "password": "password1234567"
+  },
+  {
+    "username": "Daniel",
+    "email": "Daniel@Daniel.com",
+    "password": "password1234567"
+  }
 ]
