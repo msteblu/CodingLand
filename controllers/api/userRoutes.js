@@ -51,7 +51,7 @@ router.post("/signup", async (req, res) => {
     req.session.save(() => {
       req.session.loggedIn = true;
       req.session.userId = dbUserData.getDataValue("id");
-      req.session.userName = dbUserData.getDataValue("username");
+      req.session.username = dbUserData.getDataValue("username");
 
       res.status(200).json(dbUserData);
     });

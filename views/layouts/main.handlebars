@@ -58,12 +58,11 @@
 
     {{{body}}}
 
-    {{#if loggedIn}}
-      <button class="no-button" id="logout">Logout</button>
-    {{/if}}
-    {{! <footer>
-      <button id="logout" class="btn logout-button">Logout</button>
-    </footer> }}
+    <footer>
+      {{#if loggedIn}}
+        <button class="no-button" id="logout">Logout</button>
+      {{/if}}
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"

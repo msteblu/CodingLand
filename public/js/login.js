@@ -41,6 +41,7 @@ const signupFormHandler = async (event) => {
       document.location.replace("/characterChoice");
     } else {
       alert(response.statusText);
+      alert("Password must be between 6-20 characters");
     }
   }
 };
