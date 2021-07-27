@@ -17,12 +17,12 @@
       rel="stylesheet"
     />
   </head>
-
+{{!-- removed background for header --}}
   <body>
-    <h1 class="header display-2 p-2 bg-light">
+    <h1 class="header display-2 p-2">
         Trivia Olympics
     </h1>
-     <div class="col-5">
+     <div class="col-12">
             <div class="game-board p-3">
                 <div class="wall"></div>
                 <div class="wall"></div>
@@ -32,13 +32,11 @@
                 <div class="wall"></div>
                 <div class="wall"></div>
                 <div class="wall"></div>
-                <div class="box"><img class="logo" src="../img/ghost-solid.svg" alt="black and white gamepiece ghost"></div>
-                <div class="box">2</div>
-                <div class="box" id="level2">
-                    <p>LEVEL UP</p>
-                </div>
-                <div class="box">4</div>
-                <div class="box">THE END <i class="material-icons">emoji_events</i></div>
+                <div class="box" id="one"><img class="logo" src="../img/ghost-solid.svg" alt="black and white gamepiece ghost"></div>
+                <div class="box" id="two"></div>
+                <div class="box" id="three"></div>
+                <div class="box" id="four"></div>
+                <div class="box" id="five"><i class="material-icons">emoji_events</i></div>
                 <div class="wall"></div>
                 <div class="wall"></div>
                 <div class="wall"></div>
@@ -50,8 +48,13 @@
                 <div class="wall"></div>
             </div>
      </div>
-
+<div class="container col-12">
+  <div class="col-4"></div>
+  <div class="col-4">
     {{{body}}}
+    </div>
+<div class="col-4"></div>
+    </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="../js/animation.js"></script>
 <script src="../js/login.js"></script>
