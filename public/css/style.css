@@ -2,9 +2,11 @@
     display: grid;
     grid-template-columns: 10px 80px 80px 80px 80px 80px 10px;
     grid-template-rows: 10px 80px 10px;
-    justify-content: left;
+    /* justify-content: left; */
+    align-content: center;
+    justify-content: center;
     font-family: sans-serif;
-    margin-left: 275px;
+    /* margin-left: 275px; */
     flex-wrap: wrap;
     flex-flow: wrap;
 }
@@ -14,17 +16,22 @@ img {
     height: 65px;
 }
 
+input {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
 .questions {
     justify-content: right;
     flex-flow: wrap;
-    margin-top: 120px;
+    margin-top: 20px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
-    margin-top: 50px;
+    /* margin-left: 10px; */
+    margin-top: 20px;
 }
 
 .inline {
@@ -38,22 +45,24 @@ img {
     color: purple;
 }
 
+/* making boxes circular */
 .box {
     background-color: #d9d9d9;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 
-.wall {
+/* .wall {
     background-color: black;
 }
 
 .lava {
     background-color: black;
     border: 2px solid black;
-}
+} */
 
 .box-2 {
     width: 275px;
@@ -68,18 +77,34 @@ img {
     height: 25px;
 }
 
-#level2 {
-    background-color: orange;
-    opacity: 0.65;
-}
-
 h1 {
     flex-flow: flex;
 }
 
 body {
+    /* background: url(../img/download.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#one {
+    background-color: rgb(45, 134, 236);
+}
+
+#two {
+    background-color: rgb(231, 228, 29);
+}
+
+#three {
+    background-color: black;
+}
+
+#four {
+    background-color: rgb(49, 187, 84);
+}
+
+#five {
+    background-color: rgb(240, 58, 38);
 }
