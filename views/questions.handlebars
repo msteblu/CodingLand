@@ -1,14 +1,15 @@
+{{!-- adding name field to allow only one button clicked at a time --}}
 <div>
-  {{#each questions as |question|}}
-<div>{{question.question}}</div>
-<input type="radio" id="1" value="1">
-<label for="1">{{question.correct_answer}}</label><br>
-<input type="radio" id="2" value="2">
-<label for="2">{{question.answer2}}</label><br>
-<input type="radio" id="3" value="3">
-<label for="3">{{question.answer3}}</label><br>
-<input type="radio" id="4" value="4">
-<label for="4">{{question.answer4}}</label><br>
+{{#each questions as |question|}}
+  <div class="h5 pt-3">{{question.question}}</div>
+  <input type="radio" id="1" name="quiz" value="1">
+  <label for="1">{{question.correct_answer}}</label><br>
+  <input type="radio" id="2" name="quiz" value="2">
+  <label for="2">{{question.answer2}}</label><br>
+  <input type="radio" id="3" name="quiz" value="3">
+  <label for="3">{{question.answer3}}</label><br>
+  <input type="radio" id="4" name="quiz" value="4">
+  <label for="4">{{question.answer4}}</label><br>
 {{/each}}
 </div>
 
