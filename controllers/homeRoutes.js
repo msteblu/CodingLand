@@ -9,7 +9,9 @@ router.get("/", async (req, res) => {
     return;
   } else {
     try {
-      res.render("homepage");
+      res.render("homepage", {
+        loggedIn: req.session.loggedIn,
+      });
     } catch (err) {
       res.status(500).json(err);
     }
@@ -17,16 +19,18 @@ router.get("/", async (req, res) => {
 });
 
 // Render the Character Choices
-router.get("/characterChoice", async (req, res) => {
+router.get("/characterChoice", withAuth, async (req, res) => {
   try {
-    res.render("characterChoice");
+    res.render("characterChoice", {
+      loggedIn: req.session.loggedIn,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
 // Render the Questions
-router.get("/questions", async (req, res) => {
+router.get("/questions", withAuth, async (req, res) => {
   try {
     const questionData = await Questions.findAll();
 
@@ -34,7 +38,10 @@ router.get("/questions", async (req, res) => {
       questions.get({ plain: true })
     );
     console.log(questions);
-    res.render("questions", { questions });
+    res.render("questions", {
+      questions,
+      loggedIn: true,
+    });
   } catch (err) {
     res.status(500).json(err);
     console.log(err);
