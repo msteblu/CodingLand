@@ -36,6 +36,9 @@
   
   Amira Holden(https://github.com/amiracat)
   
+  ## License
+  
+  The SVGs are from Font Awesome and the license is [here](https://fontawesome.com/license).
   
   ## Questions
 
