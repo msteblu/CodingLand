@@ -21,7 +21,12 @@ router.get("/", async (req, res) => {
 // Render the Character Choices
 router.get("/characterChoice", withAuth, async (req, res) => {
   try {
+    const userData = await User.findByPk(req.session.userId, {
+      attributes: { exclude: ["password"] },
+    });
+    const user = userData.get({ plain: true });
     res.render("characterChoice", {
+      ...user,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
