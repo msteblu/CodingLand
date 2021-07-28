@@ -1,14 +1,22 @@
-const router = require('express').Router();
-const Gamepiece = require('../../models/Gamepiece');
+const router = require("express").Router();
+const Gamepiece = require("../../models/Gamepiece");
+// const withAuth = require("../utils/auth");
 
-router.get('/:id', async (req, res) => {
-    try {
-      const characterData = await Gamepiece.findByPk(req.params.id);
-      console.log(characterData)
-      res.render('characterChoice', characterData);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+router.post("/", async (req, res) => {
+  try {
+    const characterData = await Gamepiece.findByPk(req.body.id);
+
+    req.session.save(() => {
+      req.session.chosenChar = characterData.imgfile;
+    });
+
+    res.render("questions", {
+      loggedIn: req.session.loggedIn,
+      chosenChar: req.session.chosenChar,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;

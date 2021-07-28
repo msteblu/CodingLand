@@ -11,6 +11,7 @@ router.get("/", async (req, res) => {
     try {
       res.render("homepage", {
         loggedIn: req.session.loggedIn,
+        chosenChar: "ghost-solid.svg",
       });
     } catch (err) {
       res.status(500).json(err);
@@ -28,6 +29,7 @@ router.get("/characterChoice", withAuth, async (req, res) => {
     res.render("characterChoice", {
       ...user,
       loggedIn: req.session.loggedIn,
+      chosenChar: "ghost-solid.svg",
     });
   } catch (err) {
     res.status(500).json(err);
@@ -42,10 +44,10 @@ router.get("/questions", withAuth, async (req, res) => {
     const questions = questionData.map((questions) =>
       questions.get({ plain: true })
     );
-    console.log(questions);
     res.render("questions", {
       questions,
       loggedIn: true,
+      chosenChar: req.session.chosenChar,
     });
   } catch (err) {
     res.status(500).json(err);

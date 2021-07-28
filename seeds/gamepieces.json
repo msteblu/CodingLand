@@ -1,15 +1,18 @@
 [
-    {
-      "name": "Ghost"
-    },
-    {
-      "name": "Dragon"
-    },
-    {
-      "name": "Spy"
-    },
-    {
-        "name": "Rocket"
-    }
-  ]
-  
+  {
+    "name": "Ghost",
+    "imgfile": "ghost-solid.svg"
+  },
+  {
+    "name": "Dragon",
+    "imgfile": "dragon-solid.svg"
+  },
+  {
+    "name": "Spy",
+    "imgfile": "spy-solid.svg"
+  },
+  {
+    "name": "Rocket",
+    "imgfile": "rocket-solid.svg"
+  }
+]
