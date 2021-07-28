@@ -1,4 +1,4 @@
-<div class="post card">
+<!--<div class="post card">
   <div class="card-header">
     <h2>Create New Question</h2>
   </div>
@@ -23,3 +23,51 @@
 </div>
 
 <script src="/js/addQuestionForm.js"></script>
+
+-->
+
+<div class="container">
+  <div class="questions col">
+    <div class="col-md">
+      <div class="col">
+    <h2>Create New Question</h2>
+   
+    <form id="new-question-form" class="card-body">
+      <div class="form-group">
+        <label for="question" class="form-label">New Question:</label>
+        <br>
+        <input class="form-input" type="text" name="question" />
+      </div>
+      <div class="form-group">
+        <label for="correct-answer" class="form-label">Correct Answer:</label>
+        <br>
+        <input class="form-input" name="correct-answer"/>
+      </div>
+       <div class="form-group">
+        <label for="answer2" class="form-label">Incorrect Answer 1:</label>
+        <br>
+        <input class="form-input" name="answer2" />
+      </div>
+      <div class="form-group">
+        <label for="answer3" class="form-label">Incorrect Answer 2:</label>
+        <br>
+        <input class="form-input" name="answer3" />
+      </div>
+      <div class="form-group">
+        <label for="answer4" class="form-label">Incorrect Answer 3:</label>
+        <br>
+        <input class="form-input" name="answer4" />
+      </div>
+      <br>
+      <div class="form-group mt-2 pb-2">
+        <button class="btn btn-primary" type="submit">Create</button>
+        <a class="btn btn-primary" href="/">Back</a>
+      </div>
+      
+    </form>
+  </div>
+  
+</div>
+<script src="/js/addQuestionForm.js"></script>
+
+
