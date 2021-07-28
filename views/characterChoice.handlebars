@@ -1,13 +1,14 @@
+{{!-- changed IDs --}}
 <div class="container text-center">
   <div class="questions col inline">
     <div class="col-md">
       <div class="col">
-        <h3 class="mt-3 mb-3">Welcome, {{userName}}! 
-        Choose a character:</h3>
+        <h3 class="mt-3 mb-3">Welcome,
+          {{user.username}}! Choose a character:</h3>
 
-        <form action="/character">
+        <form action="/characterChoice" name="form">
            
-          <input type="radio" id="ghost" name="character" value="ghost" />
+          <input type="radio" id="1" name="character" value="ghost" />
            
           <label for="ghost"><img
               class="choose"
@@ -15,7 +16,7 @@
               alt="black and white gamepiece ghost"
             /></label><br /><br />
            
-          <input type="radio" id="dragon" name="character" value="dragon" />
+          <input type="radio" id="2" name="character" value="dragon" />
            
           <label for="dragon"><img
               class="choose"
@@ -23,7 +24,7 @@
               alt="black and white gamepiece dragon"
             /></label><br /><br />
            
-          <input type="radio" id="spy" name="character" value="spy" />
+          <input type="radio" id="3" name="character" value="spy" />
            
           <label for="spy"><img
               class="choose"
@@ -31,7 +32,7 @@
               alt="black and white gamepiece spy"
             /></label><br /><br />
            
-          <input type="radio" id="rocket" name="character" value="rocket" />
+          <input type="radio" id="4" name="character" value="rocket" />
            
           <label for="rocket"><img
               class="choose"
