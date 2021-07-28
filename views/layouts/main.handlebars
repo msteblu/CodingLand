@@ -1,5 +1,5 @@
 <html lang="en">
-
+{{!-- added link to chooseCharacter file  --}}
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
   </head>
-{{!-- removed background for header --}}
+
   <body>
 
     <h1 class="header display-2 p-2">
@@ -65,13 +65,14 @@
     <footer>
       {{#if loggedIn}}
         <button class="no-button" id="logout">Logout</button>
+    <script src="/js/logout.js"></script>
       {{/if}}
     </footer>
 
-    <script src="../js/logout.js"></script>
     
     {{!-- <script src="../js/signup.js"></script> --}}
-     <script src="../js/addQuestion.js"></script>
+     <script src="/js/addQuestion.js"></script>
+ 
 
   </body>
 
