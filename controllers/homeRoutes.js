@@ -29,6 +29,7 @@ router.get("/", async (req, res) => {
     try {
       res.render("homepage", {
         loggedIn: req.session.loggedIn,
+        chosenChar: "ghost-solid.svg",
       });
     } catch (err) {
       res.status(500).json(err);
@@ -39,8 +40,14 @@ router.get("/", async (req, res) => {
 // Render the Character Choices
 router.get("/characterChoice", withAuth, async (req, res) => {
   try {
+    const userData = await User.findByPk(req.session.userId, {
+      attributes: { exclude: ["password"] },
+    });
+    const user = userData.get({ plain: true });
     res.render("characterChoice", {
+      ...user,
       loggedIn: req.session.loggedIn,
+      chosenChar: "ghost-solid.svg",
     });
   } catch (err) {
     res.status(500).json(err);
@@ -57,10 +64,12 @@ router.get("/questions", withAuth, async (req, res) => {
     const questions = suffledQuestions.slice(0,5).map((questions) =>
       questions.get({ plain: true })
     );
-    console.log(questions)
+    // console.log(questions)
+
     res.render("questions", {
       questions,
       loggedIn: true,
+      chosenChar: req.session.chosenChar,
     });
   } catch (err) {
     res.status(500).json(err);
