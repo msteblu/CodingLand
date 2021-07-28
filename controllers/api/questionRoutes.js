@@ -1,11 +1,12 @@
 const router = require('express').Router();
 const Questions = require('../../models/Questions');
 
+
 router.get('/:id', async (req, res) => {
     try {
       const questionData = await Questions.findByPk(req.params.id);
-      console.log(questionData)
-      res.render('questions', questionData);
+
+      res.render('questions', randomQuestions);
     } catch (err) {
       res.status(500).json(err);
     }

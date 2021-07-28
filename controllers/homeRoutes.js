@@ -2,6 +2,24 @@ const router = require("express").Router();
 const withAuth = require("../utils/auth");
 const { Questions, User, Gamepiece } = require("../models");
 
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 // Render the Home-Login Page
 router.get("/", async (req, res) => {
   if (req.session.loggedIn) {
@@ -34,10 +52,12 @@ router.get("/questions", withAuth, async (req, res) => {
   try {
     const questionData = await Questions.findAll();
 
-    const questions = questionData.map((questions) =>
+    const suffledQuestions = shuffle(questionData)
+
+    const questions = suffledQuestions.slice(0,5).map((questions) =>
       questions.get({ plain: true })
     );
-    console.log(questions);
+    console.log(questions)
     res.render("questions", {
       questions,
       loggedIn: true,
@@ -46,6 +66,14 @@ router.get("/questions", withAuth, async (req, res) => {
     res.status(500).json(err);
     console.log(err);
   }
+});
+
+router.get("/addQuestion", async (req, res) => {
+    try {
+      res.render("addQuestion");
+    } catch (err) {
+      res.status(500).json(err);
+    }
 });
 
 module.exports = router;

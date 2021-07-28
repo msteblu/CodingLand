@@ -53,6 +53,10 @@
 <div class="container col-12">
   <div class="col-4"></div>
   <div class="col-4">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    ></script>
+    <script src="../js/animation.js"></script>
     {{{body}}}
     </div>
   <div class="col-4"></div>
@@ -61,17 +65,14 @@
     <footer>
       {{#if loggedIn}}
         <button class="no-button" id="logout">Logout</button>
+    <script src="/js/logout.js"></script>
       {{/if}}
     </footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
-    ></script>
-     <script src="../js/chooseCharacter.js"></script>
-    <script src="../js/animation.js"></script>
-    <script src="/js/logout.js"></script>
-    <script src="../js/login.js"></script>
-    <script src="../js/signup.js"></script>
+    
+    {{!-- <script src="../js/signup.js"></script> --}}
+     <script src="/js/addQuestion.js"></script>
+ 
 
   </body>
 
