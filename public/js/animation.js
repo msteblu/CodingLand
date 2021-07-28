@@ -1,9 +1,9 @@
 //moves right one square, background becomes white, spins 360
-function moveRight() {
+function moveRight(move) {
     gsap.to(".logo", {
         delay: 1,
         duration: 2,
-        x: 80,
+        x: 0 + move,
         backgroundColor: "white",
         borderRadius: "50%",
         border: "10px solid white",
