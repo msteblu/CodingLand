@@ -1,20 +1,15 @@
 const router = require("express").Router();
 const Gamepiece = require("../../models/Gamepiece");
-// const withAuth = require("../utils/auth");
+const withAuth = require("../../utils/auth");
 
-router.post("/", async (req, res) => {
+// Posting the user's chosen character
+router.post("/", withAuth, async (req, res) => {
   try {
     const characterData = await Gamepiece.findByPk(req.body.id);
 
-    req.session.chosenChar = characterData.getDataValue("imgfile");
-
-    req.session.save(() => {
+    req.session.save((err) => {
       req.session.chosenChar = characterData.getDataValue("imgfile");
-    });
-
-    res.render("questions", {
-      loggedIn: req.session.loggedIn,
-      chosenChar: characterData.getDataValue("imgfile"),
+      res.redirect("/questions");
     });
   } catch (err) {
     res.status(500).json(err);
