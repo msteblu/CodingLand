@@ -1,33 +1,41 @@
-{{!-- adding name field to allow only one button clicked at a time --}}
+{{! adding name field to allow only one button clicked at a time }}
 <div class="question-container">
-{{#each questions as |question|}}
-  <div class="h5 pt-3">{{question.question}}</div>
+  {{#each questions as |question|}}
+    <div class="h5 pt-3">{{question.question}}</div>
 
-  <input class="question-btn" type="radio" id="1" name="quiz" value="1" correct="true">
-  <label for="1">{{question.correct_answer}}</label><br>
+    <input
+      class="question-btn"
+      type="radio"
+      id="1"
+      name="quiz"
+      value="1"
+      correct="true"
+    />
+    <label for="1">{{question.correct_answer}}</label><br />
 
-  <input class="question-btn" type="radio" id="2" name="quiz" value="2">
-  <label for="2">{{question.answer2}}</label><br>
+    <input class="question-btn" type="radio" id="2" name="quiz" value="2" />
+    <label for="2">{{question.answer2}}</label><br />
 
-  <input class="question-btn" type="radio" id="3" name="quiz" value="3">
-  <label for="3">{{question.answer3}}</label><br>
+    <input class="question-btn" type="radio" id="3" name="quiz" value="3" />
+    <label for="3">{{question.answer3}}</label><br />
 
-  <input class="question-btn" type="radio" id="4" name="quiz" value="4">
-  <label for="4">{{question.answer4}}</label><br>
-{{/each}}
+    <input class="question-btn" type="radio" id="4" name="quiz" value="4" />
+    <label for="4">{{question.answer4}}</label><br />
+  {{/each}}
 </div>
 
 <div id="openModal" class="modal openModal">
-        <h2 class="textCenter"></h2>
-        <h3>Quiz Complete!</h3>
-        <div id="openModalDiv">
-            <button id="openBtn" class="textCenter" onclick="replay()">
-                Play again!
-            </button>
-            <button id="openBtn" class="textCenter" onclick="noReplay()">
-                Back to main
-            </button>
-        </div>
-    </div>
+  <div id="openModalDiv">
+    <h3 id="grad3">Quiz Complete!</h3>
+  </div>
+  <div id="openModalDiv">
+    <button id="openBtn" class="textCenter" onclick="replay()">
+      Play Again!
+    </button>
+    <button id="openBtn" class="textCenter" onclick="noReplay()">
+      Back to Main
+    </button>
+  </div>
+</div>
 
 <script src="/js/questions.js"></script>
