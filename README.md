@@ -24,17 +24,24 @@
   
  *  MVC paradigm structure
   
-  <img width="245" alt="character-screenshot" src="https://user-images.githubusercontent.com/80497167/127253681-79557df9-099f-4b97-8bc0-7ce918273cfd.png">
+  Users can select a character: 
+  
+  <img width="200" alt="character-screenshot" src="https://user-images.githubusercontent.com/80497167/127253681-79557df9-099f-4b97-8bc0-7ce918273cfd.png">
+  
+  Then answer the trivia questions: 
+  
+  <img width="400" alt="question-screenshot" src="https://user-images.githubusercontent.com/80497167/127414972-d66880f9-8459-49c1-997f-11fe479c4c66.png">
+  
 
   ## Contributors
 
-  John Hope(https://github.com/hope1407)
+  John Hope (https://github.com/hope1407)
   
-  Megan S(https://github.com/msteblu)
+  Megan Steblay (https://github.com/msteblu)
   
-  Daniel Klauer(https://github.com/danielkl12)
+  Daniel Klauer (https://github.com/danielkl12)
   
-  Amira Holden(https://github.com/amiracat)
+  Amira Holden (https://github.com/amiracat)
   
   ## License
   
