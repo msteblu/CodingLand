@@ -1,6 +1,6 @@
 .game-board {
     display: grid;
-    grid-template-columns: 10px 80px 80px 80px 80px 80px 10px;
+    grid-template-columns: 10px 80px 80px 80px 80px 80px 80px 80px 10px;
     grid-template-rows: 10px 80px 10px;
     /* justify-content: left; */
     align-content: center;
@@ -89,9 +89,14 @@ body {
     background-size: cover;
 }
 
+#zero {
+    background-color: white;
+}
+
 #one {
     background-color: rgb(45, 134, 236);
 }
+
 
 #two {
     background-color: rgb(231, 228, 29);
