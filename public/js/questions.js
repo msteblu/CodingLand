@@ -1,6 +1,7 @@
 console.log("loading questions js ...");
 
 let additive =80;
+let modal = document.querySelector('.openModal')
 
 document.querySelector(".question-container").addEventListener("click",(event) => {
     if (event.target.classList.contains("question-btn")) {
@@ -10,8 +11,8 @@ document.querySelector(".question-container").addEventListener("click",(event) =
         if (isCorrect) {
             moveRight(additive);
             additive+=80;
-            if (additive === 400) {
-                alert("You Win!")
+            if (additive === 480) {
+                modal.style.display = "flex";
             }
         } else {
             alert("Wrong!");
@@ -19,3 +20,10 @@ document.querySelector(".question-container").addEventListener("click",(event) =
     }
 });
 
+replay = () => {
+    document.location.replace("/questions")
+  }
+
+  noReplay = () => {
+    document.location.replace("/")
+  }
