@@ -79,7 +79,9 @@ router.get("/questions", withAuth, async (req, res) => {
 
 router.get("/addQuestion", async (req, res) => {
     try {
-      res.render("addQuestion");
+      res.render("addQuestion", {
+        chosenChar: req.session.chosenChar
+      });
     } catch (err) {
       res.status(500).json(err);
     }

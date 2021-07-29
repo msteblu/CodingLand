@@ -57,5 +57,9 @@ const choiceHandler = async (event) => {
   }
 };
 
+addQuestion = () => {
+  document.location.replace("/addQuestion")
+}
+
 // Event Listener
 document.querySelector("form").addEventListener("submit", choiceHandler);
