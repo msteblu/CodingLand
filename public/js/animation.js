@@ -14,5 +14,15 @@ function moveRight(move) {
         duration: 1,
         rotation: 360
     });
+    resetRotation();
 };
+
+function resetRotation() {
+    gsap.to(".logo", {
+        delay: 4,
+        duration: 0,
+        rotation: 0
+    });
+};
+
 moveRight();
