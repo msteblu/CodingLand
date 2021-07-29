@@ -1,26 +1,29 @@
 {{! adding name field to allow only one button clicked at a time }}
 <div class="question-container">
   {{#each questions as |question|}}
-    <div class="h5 pt-3">{{question.question}}</div>
+  {{!-- Adding div one-question below to be able to hide one question at a time after isCorrect function --}}
+    <div class="one-question">
+      <div class="h5 pt-3">{{question.question}}</div>
 
-    <input
-      class="question-btn"
-      type="radio"
-      id="1"
-      name="quiz"
-      value="1"
-      correct="true"
-    />
-    <label for="1">{{question.correct_answer}}</label><br />
+      <input
+        class="question-btn"
+        type="radio"
+        id="1"
+        name="quiz"
+        value="1"
+        correct="true"
+      />
+      <label for="1">{{question.correct_answer}}</label><br />
 
-    <input class="question-btn" type="radio" id="2" name="quiz" value="2" />
-    <label for="2">{{question.answer2}}</label><br />
+      <input class="question-btn" type="radio" id="2" name="quiz" value="2" />
+      <label for="2">{{question.answer2}}</label><br />
 
-    <input class="question-btn" type="radio" id="3" name="quiz" value="3" />
-    <label for="3">{{question.answer3}}</label><br />
+      <input class="question-btn" type="radio" id="3" name="quiz" value="3" />
+      <label for="3">{{question.answer3}}</label><br />
 
-    <input class="question-btn" type="radio" id="4" name="quiz" value="4" />
-    <label for="4">{{question.answer4}}</label><br />
+      <input class="question-btn" type="radio" id="4" name="quiz" value="4" />
+      <label for="4">{{question.answer4}}</label><br />
+    </div>
   {{/each}}
 </div>
 
