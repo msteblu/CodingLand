@@ -80,8 +80,8 @@ router.get("/questions", withAuth, async (req, res) => {
 router.get("/addQuestion", async (req, res) => {
     try {
       res.render("addQuestion", {
-
-        chosenChar: req.session.chosenChar
+        loggedIn: req.session.loggedIn,
+        chosenChar: "ghost-solid.svg",
       });
       
     } catch (err) {
