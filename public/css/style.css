@@ -113,3 +113,28 @@ body {
 #five {
     background-color: rgb(240, 58, 38);
 }
+
+.openModal {
+    border: black 5px solid;
+    background-color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size:15pt;
+    border-radius: 40px;
+}
+
+#openModalDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#openBtn {
+    background-color:hsl(348, 100%, 61%);
+    color: blue;
+    font-size: 16pt;
+    border-radius: 10px;
+    width: 175px;
+}
+
+#openBtn a {
+    color: white;
+}
