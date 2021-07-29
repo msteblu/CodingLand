@@ -6,13 +6,15 @@ router.post("/", async (req, res) => {
   try {
     const characterData = await Gamepiece.findByPk(req.body.id);
 
+    req.session.chosenChar = characterData.getDataValue("imgfile");
+
     req.session.save(() => {
-      req.session.chosenChar = characterData.imgfile;
+      req.session.chosenChar = characterData.getDataValue("imgfile");
     });
 
     res.render("questions", {
       loggedIn: req.session.loggedIn,
-      chosenChar: req.session.chosenChar,
+      chosenChar: characterData.getDataValue("imgfile"),
     });
   } catch (err) {
     res.status(500).json(err);
