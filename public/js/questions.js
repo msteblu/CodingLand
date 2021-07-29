@@ -10,6 +10,12 @@ document.querySelector(".question-container").addEventListener("click",(event) =
         if (isCorrect) {
             moveRight(additive);
             additive+=80;
+            if (additive === 400) {
+                alert("You Win!")
+            }
+        } else {
+            alert("Wrong!");
         }
     }
 });
+
