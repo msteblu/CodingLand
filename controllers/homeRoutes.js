@@ -76,12 +76,14 @@ router.get("/questions", withAuth, async (req, res) => {
     console.log(err);
   }
 });
-
+// added loggedIn and chosenChar below
 router.get("/addQuestion", async (req, res) => {
     try {
       res.render("addQuestion", {
+
         chosenChar: req.session.chosenChar
       });
+      
     } catch (err) {
       res.status(500).json(err);
     }
